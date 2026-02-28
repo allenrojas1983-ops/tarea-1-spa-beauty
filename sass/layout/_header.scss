@@ -2,6 +2,7 @@
 @use "../abstracts/mixins" as m;
 
 .header {
+  margin-top: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +10,7 @@
     padding-top: 10px;
   }
   nav {
-    margin-left: 100px;
+    margin-left: 90px;
   }
   &_menu {
     @include m.ul();
@@ -40,8 +41,7 @@
         display: none;
         position: absolute;
         top: 100%;
-        left: 0;
-        background-color: white;
+        left: 0;        
       }
       & .checkbox:checked ~ .submenu {
         display: block;
@@ -50,7 +50,7 @@
   }
   &_icons {
     margin-top: 8px;
-    margin-left: 200px;
+    margin-left: 180px;
     display: flex;
     gap: 30px;
     & a {

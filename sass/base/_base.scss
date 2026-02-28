@@ -6,17 +6,19 @@ body {
   font-family: "Poppins", sans-serif;
   color: v.$azul;
   background-image:
-    url("../img/spa.png"),
+    url("../img/woman.png"), url("../img/spa.png"),
     linear-gradient(
       to right,
-      white 68%,
-      v.$azul-secondary 68%,
+      white 65%,
+      v.$azul-secondary 65%,
       v.$azul-secondary 100%
     );
   background-size:
-    auto,
-    100% 90vh;
-  background-position: 90% 50px, left top;
+    37%,28%,
+    100% 76vh;
+  background-position:
+    70% 85px, 85% 30px,
+    left top;
   background-repeat: no-repeat;
 }
 
@@ -24,6 +26,5 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1400px;
-  padding: 16px;
   box-sizing: border-box;
 }

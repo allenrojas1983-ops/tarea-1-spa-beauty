@@ -1,6 +1,98 @@
-@import "grid";
-@import "footer";
-@import "forms";
-@import "navbar";
-@import "sidebar";
-@import "header";
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.hero {
+  width: 690px;
+  margin-top: 75px;
+  &_h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  &_p {
+    font-size: 21px;
+    color: v.$gris;
+    margin-bottom: 50px;
+  }
+  &_ul {
+    @include m.ul();
+    justify-content: flex-start;
+    gap: 60px;
+    & li {
+      padding: 10px 20px;
+      &:first-child {
+        @include m.boton();
+        color: white;
+        & a {
+          color: white;
+        }
+      }
+      a {
+        position: relative;
+        @include m.a();
+        img {
+          position: absolute;
+          top: -18px;
+          right: 80px;
+        }
+      }
+    }
+  }
+}
+
+.div-flex {
+  display: flex;
+
+  gap: 30px;
+}
+
+.hero_footer {
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+  & img {
+    width: 50px;
+  }
+  & h3 {
+    font-weight: 500;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  & p {
+    color: v.$gris;
+    font-size: 14px;
+  }
+}
+
+.comentarios {
+  position: relative;
+  display: flex;
+  & article {
+    width: 270px;
+    height: 150px;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #ffffff80;
+    border-radius: 20px;
+    position: relative;
+    &:first-child {
+      top: 20px;
+      right: -400px;
+    }
+    &:last-child {
+      top: -200px;
+      right: -250px;
+    }
+    & p {
+      color: v.$negro;
+      margin: 0;
+    }
+    & h4 {
+        margin: 0;
+        margin-top: 5px;
+    }
+  }
+}
