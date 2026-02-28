@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #264065;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_logo {
+  padding-top: 10px;
+}
+.header nav {
+  margin-left: 100px;
+}
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+}
+.header_menu a {
+  display: block;
+  text-decoration: none;
+  color: #264065;
+  transition: all 0.2s ease-in-out;
+}
+.header_menu a:hover {
+  transform: scale(1.1);
+  font-weight: 400;
+}
+.header_menu_secundario {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.header_menu_secundario .click {
+  cursor: pointer;
+}
+.header_menu_secundario img {
+  position: absolute;
+  top: 1px;
+  right: -30px;
+}
+.header_menu_secundario .checkbox {
+  display: none;
+}
+.header_menu_secundario:hover {
+  transform: scale(1.1);
+  font-weight: 400;
+}
+.header_menu_secundario .submenu {
+  width: 100px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+}
+.header_menu_secundario .checkbox:checked ~ .submenu {
+  display: block;
+}
+.header_icons {
+  margin-top: 8px;
+  margin-left: 200px;
+  display: flex;
+  gap: 30px;
+}
+.header_icons a {
+  display: block;
+  text-decoration: none;
+  color: #264065;
+  transition: all 0.2s ease-in-out;
+}
+.header_icons a:hover {
+  transform: scale(1.1);
+  font-weight: 400;
+}
+.header_login {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+}
+.header_login li {
+  padding: 10px 20px;
+}
+.header_login li a {
+  display: block;
+  text-decoration: none;
+  color: #264065;
+  transition: all 0.2s ease-in-out;
+}
+.header_login li a:hover {
+  transform: scale(1.1);
+  font-weight: 400;
+}
+.header_login li a {
+  text-decoration: underline;
+}
+.header_login li:last-child {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #264065;
+  border-radius: 50px;
+}
+.header_login li:last-child a {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=app.css.map */
